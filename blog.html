@@ -1,0 +1,25 @@
+---
+layout: default
+title: Build log
+permalink: /blog/
+---
+
+<section class="intro">
+  <h1>Build log</h1>
+  <p class="lede">
+    What I worked on, what broke, and what I took from it. Mostly agentic AI, data
+    engineering and German.
+  </p>
+</section>
+
+<ul class="post-list">
+  {%- for post in site.posts %}
+  <li>
+    <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%d %b %Y" }}</time>
+    <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    <p class="excerpt">{{ post.description | default: post.excerpt | strip_html | truncate: 160 }}</p>
+  </li>
+  {%- else %}
+  <li><p class="excerpt">Nothing here yet.</p></li>
+  {%- endfor %}
+</ul>

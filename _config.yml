@@ -1,0 +1,36 @@
+title: Supreet Bhat
+tagline: Data Science and AI
+description: >-
+  MSc Data Science student at Universität Trier building agentic AI systems with
+  LangChain, RAG and MCP. Projects, notes and a daily build log.
+
+# Change this to your GitHub Pages URL once the repo exists.
+url: "https://supreetbhat.github.io"
+baseurl: ""
+
+email: supreetbhat01@gmail.com
+github_username: supreetbhat
+linkedin_username: supreetbhat
+huggingface_username: SupreetBhat
+
+permalink: /blog/:year/:month/:day/:title/
+timezone: Europe/Berlin
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+feed:
+  path: feed.xml
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor

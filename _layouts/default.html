@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {%- seo -%}
+  <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
+  {%- feed_meta -%}
+</head>
+<body>
+  <header class="site-header">
+    <a class="site-name" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+    <nav>
+      <a href="{{ '/' | relative_url }}">Work</a>
+      <a href="{{ '/blog/' | relative_url }}">Log</a>
+      <a href="https://github.com/{{ site.github_username }}">GitHub</a>
+    </nav>
+  </header>
+
+  <main>
+    {{ content }}
+  </main>
+
+  <footer class="site-footer">
+    <div class="links">
+      <a href="mailto:{{ site.email }}">Email</a>
+      <a href="https://github.com/{{ site.github_username }}">GitHub</a>
+      <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}/">LinkedIn</a>
+      <a href="https://huggingface.co/{{ site.huggingface_username }}">Hugging Face</a>
+      <a href="{{ '/feed.xml' | relative_url }}">RSS</a>
+    </div>
+    <p class="fine">Built with Jekyll. Hosted on GitHub Pages.</p>
+  </footer>
+</body>
+</html>
