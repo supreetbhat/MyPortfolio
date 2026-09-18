@@ -1,4 +1,4 @@
-# supreetbhat.github.io
+# MyPortfolio
 
 My portfolio and build log. A plain Jekyll site with no theme gem and no build step, so
 GitHub Pages compiles it on push and there is nothing to break between writing and publishing.
@@ -54,9 +54,13 @@ Then open <http://localhost:4000>.
 
 ## Deploying
 
-The repo must be named `supreetbhat.github.io` to serve from the root domain. Push it, then
-go to Settings, Pages, and set the source to deploy from the `main` branch. GitHub builds
-Jekyll natively, so no Actions workflow is needed.
+Go to Settings, Pages, and set the source to deploy from the `main` branch. GitHub builds
+Jekyll natively, so no Actions workflow is needed. The site then serves at
+<https://supreetbhat.github.io/MyPortfolio/>.
 
-For a custom domain later, add a `CNAME` file containing the domain and point a DNS record at
-GitHub Pages.
+Because this is a project repo rather than a user site, `baseurl` in `_config.yml` is set to
+`/MyPortfolio`. Renaming the repo to `supreetbhat.github.io` would move the site to the root
+domain, and `baseurl` must be set back to `""` on the same commit if that ever happens.
+
+For a custom domain later, add a `CNAME` file containing the domain, point a DNS record at
+GitHub Pages, and clear `baseurl`.

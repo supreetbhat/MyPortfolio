@@ -4,9 +4,10 @@ description: >-
   MSc Data Science student at Universität Trier building agentic AI systems with
   LangChain, RAG and MCP. Projects, notes and a daily build log.
 
-# Change this to your GitHub Pages URL once the repo exists.
+# Served from a project repo, so the site lives under /MyPortfolio.
+# If you later rename the repo to supreetbhat.github.io, set baseurl to "".
 url: "https://supreetbhat.github.io"
-baseurl: ""
+baseurl: "/MyPortfolio"
 
 email: supreetbhat01@gmail.com
 github_username: supreetbhat
