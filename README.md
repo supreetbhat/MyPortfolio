@@ -23,7 +23,7 @@ Create a file in `_posts/` named `YYYY-MM-DD-some-slug.md`:
 layout: post
 title: "What I worked on today"
 description: "One sentence for the index page and for link previews."
-tags: [agentic-ai]
+tags: ["agentic ai"]
 ---
 
 Write in Markdown. Code fences, images and links all work.

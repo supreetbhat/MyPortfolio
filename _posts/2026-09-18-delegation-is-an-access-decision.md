@@ -2,7 +2,7 @@
 layout: post
 title: "Delegation is an access decision, not a speed trick"
 description: "Building a team of agents taught me that the description routes, the system prompt defines the role, and only the permission list actually enforces anything."
-tags: [agentic-ai, langchain]
+tags: ["agentic ai", "langchain"]
 ---
 
 An AI agent allowed to read everything will eventually hold everything in one place. That is
