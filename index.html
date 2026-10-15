@@ -3,114 +3,95 @@ layout: home
 title: Supreet Bhat
 ---
 
-<header class="top">
-  <a class="mark" href="#top">Supreet Bhat</a>
-  <nav aria-label="Sections">
-    <a href="#work">Work</a>
-    <a href="#background">Background</a>
-    <a href="{{ '/blog/' | relative_url }}">Build log</a>
-    <a href="#contact">Contact</a>
-  </nav>
-</header>
-
-<section class="hero" id="top">
-  <h1 class="word" aria-label="Supreet"><span>Supreet</span></h1>
-  <div class="hero-copy">
-    <p class="lead">I build and deploy agentic AI in Python. MSc Data Science, Trier.</p>
-    <a class="button" href="mailto:{{ site.email }}?subject=Working%20student%20role&amp;body=Hello%20Supreet%2C%0A%0AI%20would%20like%20to%20talk%20about%20a%20role%20at%20">Tell me about the role</a>
+<div class="stage" id="top">
+  <div class="pin" aria-hidden="true">
+    <span class="n1">Supreet</span>
+    <span class="n2">Bhat</span>
   </div>
-</section>
 
-<figure class="band band-photo">
-  <img class="drift" src="{{ '/assets/img/porta-nigra-morgens-100mp.jpg' | relative_url }}" width="1920" height="1296" alt="The Porta Nigra, the Roman city gate of Trier, in morning light" decoding="async">
-  <figcaption>The Porta Nigra in Trier, where I study. The masons who built it cut a mark into the stones they laid. Each project below is my mark.</figcaption>
-</figure>
+  <section class="plate hero">
+    <img src="{{ '/assets/img/porta-nigra-morgens-100mp.jpg' | relative_url }}" width="1920" height="1296" alt="The Porta Nigra, the Roman city gate of Trier, in morning light" decoding="async">
+    <h1 class="sr">Supreet Bhat</h1>
+    <nav class="links" aria-label="Sections">
+      <a href="#work">Work</a>
+      <a href="#background">Background</a>
+      <a href="{{ '/blog/' | relative_url }}">Build log</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="hero-copy">
+      <p class="lead">I build and deploy agentic AI in Python. MSc Data Science in Trier, looking for a working student role.</p>
+      <a class="button" href="mailto:{{ site.email }}?subject=Working%20student%20role&amp;body=Hello%20Supreet%2C%0A%0AI%20would%20like%20to%20talk%20about%20a%20role%20at%20">Tell me about the role</a>
+    </div>
+  </section>
 
-<section class="work" id="work">
-  <h2 class="sr">Work</h2>
-  <p class="statement" data-reveal>
-    <strong>Marks:</strong>
-    <a class="proj is-on" href="https://github.com/supreetbhat/DeepAgents" data-id="deepagents">DeepAgents</a>,
-    <a class="proj" href="https://github.com/supreetbhat" data-id="dataspeaks">DataSpeaks</a>,
-    <a class="proj" href="https://github.com/supreetbhat/codebase_assistant" data-id="codebase">CodeBase Assistant</a>,
-    <a class="proj" href="https://github.com/supreetbhat/European-Energy-Market-Analytics" data-id="energy">Energy Analytics</a>,
-    <a class="proj" href="https://github.com/supreetbhat/mcp-google-calender" data-id="calendar">Calendar MCP</a>,
-    <a class="proj" href="https://github.com/supreetbhat/cloud-task" data-id="cloudtask">Cloud Task</a>,
-    <a class="proj" href="https://huggingface.co/SupreetBhat" data-id="spaces">Eight ML apps</a>.
-  </p>
+  <section class="plate" id="work">
+    <img class="p-img" src="{{ '/assets/img/trier-porta-nigra-steinmetzzeichen-mac.jpg' | relative_url }}" width="1920" height="1156" alt="Sandstone of the Porta Nigra with a mason's mark cut into it" loading="lazy" decoding="async">
+    <div class="row" data-reveal><span class="yr">2026</span><a class="ti" href="https://github.com/supreetbhat/DeepAgents">DeepAgents</a><span class="fa">Python, LangGraph, MCP</span></div>
+    <p class="desc" data-reveal>A working lab for agent design: tool calling discipline, MCP behind an allowlist, human approval gates, per user memory and subagent teams limited by file permissions.</p>
+  </section>
 
-  <div class="readout" aria-live="polite" data-reveal>
-    <div class="panel" data-for="deepagents">
-      <p class="what">A working lab for agent design. Persona and prompt experiments, tool calling discipline, thread persistence, MCP behind an allowlist, human approval gates, sandboxed execution, per user memory and subagent teams limited by file permissions.</p>
-      <p class="how">Python, deepagents, LangGraph, MCP. 2026. <a href="https://github.com/supreetbhat/DeepAgents">Open the repository</a></p>
-    </div>
-    <div class="panel" data-for="dataspeaks" hidden>
-      <p class="what">An agentic analytics assistant. It runs an autonomous tool calling loop over more than 31,000 material test records and answers in plain language. Built in 48 hours at START Hack 2026 in St. Gallen with team Breakers.</p>
-      <p class="how">Python, FastAPI, React 19, MongoDB, Claude. 2026. <a href="https://github.com/supreetbhat">See my GitHub</a></p>
-    </div>
-    <div class="panel" data-for="codebase" hidden>
-      <p class="what">A full RAG pipeline that answers questions about a Python codebase. Code is chunked, embedded and searched in a FAISS index, and answers are grounded in the code it retrieved.</p>
-      <p class="how">Python, LangChain, FAISS, Gemini. 2025. <a href="https://github.com/supreetbhat/codebase_assistant">Open the repository</a></p>
-    </div>
-    <div class="panel" data-for="energy" hidden>
-      <p class="what">A cloud native ETL that parses nested XML into a queryable table of European day ahead electricity prices, governed through Unity Catalog.</p>
-      <p class="how">PySpark, Azure Databricks, SQL. 2025. <a href="https://github.com/supreetbhat/European-Energy-Market-Analytics">Open the repository</a></p>
-    </div>
-    <div class="panel" data-for="calendar" hidden>
-      <p class="what">A persistent MCP bridge that gives an assistant full create, read, update and delete access to Google Calendar, with OAuth and local state in SQLite.</p>
-      <p class="how">Python, FastAPI, SQLite, MCP. 2025. <a href="https://github.com/supreetbhat/mcp-google-calender">Open the repository</a></p>
-    </div>
-    <div class="panel" data-for="cloudtask" hidden>
-      <p class="what">A four tier deployment on AWS EC2 with a reverse proxy, systemd daemons and security group policy, built to production shape rather than demo shape.</p>
-      <p class="how">Docker, Nginx, AWS EC2, FastAPI. 2024. <a href="https://github.com/supreetbhat/cloud-task">Open the repository</a></p>
-    </div>
-    <div class="panel" data-for="spaces" hidden>
-      <p class="what">Eight live Hugging Face Spaces: meter reading with YOLOv8 and OCR, abstractive summarisation, neural translation, question answering over PDFs, sentiment analysis, and object detection with spoken output.</p>
-      <p class="how">PyTorch, Transformers, YOLOv8, Gradio. 2024 to 2025. <a href="https://huggingface.co/SupreetBhat">Open my Spaces</a></p>
-    </div>
-  </div>
-  <p class="count" data-reveal>Seven entries, 2024 to 2026. Select a name to read what it does.</p>
-</section>
+  <section class="plate">
+    <img class="p-img" src="{{ '/assets/img/trier-amphitheater-bw-2013-07-08-13.jpg' | relative_url }}" width="1920" height="1285" alt="The Roman amphitheatre in Trier" loading="lazy" decoding="async">
+    <div class="row" data-reveal><span class="yr">2026</span><a class="ti" href="https://github.com/supreetbhat">DataSpeaks</a><span class="fa">31,000 test records</span></div>
+    <p class="desc" data-reveal>An agentic analytics assistant with an autonomous tool calling loop, built in 48 hours at START Hack 2026 in St. Gallen with team Breakers.</p>
+  </section>
+</div>
+
+<div class="plates">
+  <section class="plate">
+    <img class="p-img" src="{{ '/assets/img/trier-kaiserthermen-bw-1.jpg' | relative_url }}" width="1920" height="1066" alt="The Roman imperial baths in Trier" loading="lazy" decoding="async">
+    <div class="row" data-reveal><span class="yr">2025</span><a class="ti" href="https://github.com/supreetbhat/codebase_assistant">CodeBase Assistant</a><span class="fa">LangChain, FAISS, Gemini</span></div>
+    <p class="desc" data-reveal>A full RAG pipeline that answers questions about a Python codebase, grounded in the code it retrieves rather than in model memory.</p>
+  </section>
+
+  <section class="plate">
+    <img class="p-img" src="{{ '/assets/img/trier-bw-2022-06-22-07-30.jpg' | relative_url }}" width="1920" height="1277" alt="The main market square of Trier with the church of St. Gangolf" loading="lazy" decoding="async">
+    <div class="row" data-reveal><span class="yr">2025</span><a class="ti" href="https://github.com/supreetbhat/European-Energy-Market-Analytics">Energy Market Analytics</a><span class="fa">PySpark, Azure Databricks</span></div>
+    <p class="desc" data-reveal>A cloud native ETL that parses nested XML into a queryable table of European day ahead electricity prices, governed through Unity Catalog.</p>
+  </section>
+
+  <section class="plate">
+    <img class="p-img" src="{{ '/assets/img/trier-porta-nigra-stra-enpflaster.jpg' | relative_url }}" width="1920" height="1443" alt="A patch of ancient Roman paving beside the Porta Nigra in Trier" loading="lazy" decoding="async">
+    <div class="row" data-reveal><span class="yr">2025</span><a class="ti" href="https://github.com/supreetbhat/mcp-google-calender">Calendar MCP Server</a><span class="fa">FastAPI, OAuth, SQLite</span></div>
+    <p class="desc" data-reveal>A persistent MCP bridge that gives an assistant full create, read, update and delete access to Google Calendar.</p>
+  </section>
+
+  <section class="plate">
+    <img class="p-img" src="{{ '/assets/img/o-94135-20140612-8-20141228-05.jpg' | relative_url }}" width="1700" height="1080" alt="Letters MAC cut into a stone in the western passage of the Porta Nigra" loading="lazy" decoding="async">
+    <div class="row" data-reveal><span class="yr">2024</span><a class="ti" href="https://github.com/supreetbhat/cloud-task">Cloud Task</a><span class="fa">Docker, Nginx, AWS EC2</span></div>
+    <p class="desc" data-reveal>A four tier deployment with a reverse proxy, systemd daemons and security group policy, built to production shape rather than demo shape.</p>
+  </section>
+
+  <section class="plate">
+    <img class="p-img flip" src="{{ '/assets/img/porta-nigra-morgens-100mp.jpg' | relative_url }}" width="1920" height="1296" alt="The Porta Nigra seen from the side in morning light" loading="lazy" decoding="async">
+    <div class="row" data-reveal><span class="yr">2024 to 2025</span><a class="ti" href="https://huggingface.co/SupreetBhat">Eight ML apps</a><span class="fa">PyTorch, YOLOv8, Gradio</span></div>
+    <p class="desc" data-reveal>Live Hugging Face Spaces: meter reading with OCR, summarisation, translation, question answering over PDFs, sentiment analysis and object detection with spoken output.</p>
+  </section>
+</div>
 
 <section class="background" id="background">
-  <div class="table" role="table" aria-label="Background">
-    <div class="row head" role="row" data-reveal><span role="columnheader">Education and work</span><span role="columnheader">Where</span><span role="columnheader">Place</span><span role="columnheader">When</span></div>
-    <div class="row" role="row" data-reveal><span role="cell">MSc Data Science</span><span role="cell">Universität Trier</span><span role="cell">Trier, Germany</span><span role="cell" class="when">2025 to 2027</span></div>
-    <div class="row" role="row" data-reveal><span role="cell">Data Science and AI Workflows Intern</span><span role="cell">Magicroll.ai</span><span role="cell">Bengaluru, India</span><span role="cell" class="when">May to Oct 2024</span></div>
-    <div class="row" role="row" data-reveal><span role="cell">BE Information Science and Engineering</span><span role="cell">Acharya Institute of Technology</span><span role="cell">Bengaluru, India</span><span role="cell" class="when">2020 to 2024</span></div>
-    <div class="row" role="row" data-reveal><span role="cell">Full Stack Intern</span><span role="cell">Compsoft Technologies</span><span role="cell">Bengaluru, India</span><span role="cell" class="when">Sep to Oct 2023</span></div>
+  <div class="table" role="table" aria-label="Education and work">
+    <div class="row-t head" role="row" data-reveal><span role="columnheader">Education and work</span><span role="columnheader">Where</span><span role="columnheader">Place</span><span role="columnheader">When</span></div>
+    <div class="row-t" role="row" data-reveal><span role="cell">MSc Data Science</span><span role="cell">Universität Trier</span><span role="cell">Trier, Germany</span><span role="cell" class="when">2025 to 2027</span></div>
+    <div class="row-t" role="row" data-reveal><span role="cell">Data Science and AI Workflows Intern</span><span role="cell">Magicroll.ai</span><span role="cell">Bengaluru, India</span><span role="cell" class="when">May to Oct 2024</span></div>
+    <div class="row-t" role="row" data-reveal><span role="cell">BE Information Science and Engineering</span><span role="cell">Acharya Institute of Technology</span><span role="cell">Bengaluru, India</span><span role="cell" class="when">2020 to 2024</span></div>
+    <div class="row-t" role="row" data-reveal><span role="cell">Full Stack Intern</span><span role="cell">Compsoft Technologies</span><span role="cell">Bengaluru, India</span><span role="cell" class="when">Sep to Oct 2023</span></div>
   </div>
 </section>
 
-<figure class="band band-strip">
-  <img class="drift" src="{{ '/assets/img/trier-porta-nigra-stra-enpflaster.jpg' | relative_url }}" width="1920" height="1443" alt="A patch of ancient Roman paving beside the Porta Nigra in Trier" loading="lazy" decoding="async">
-  <figcaption>Roman paving at the foot of the gate. Nothing here was built once and left alone.</figcaption>
-</figure>
-
 <section class="about" id="about">
-  <p class="story" data-reveal><strong>Supreet Bhat</strong> here. I study Data Science at <mark class="m-blue">Universität Trier</mark> and build agentic AI the way it will have to be run: tools behind an allowlist, a person approving the risky step, and memory kept apart for each user. Before the master's I finished a BE in Information Science and Engineering in <mark class="m-ink">Bengaluru</mark> with a CGPA of 8.5, and worked as an intern on AI workflows at Magicroll.ai and on web features and SQL at Compsoft Technologies. My work is in Python with LangChain, <mark class="m-grey">LangGraph</mark>, RAG and MCP, shipped through FastAPI, Docker and <mark class="m-blue">AWS EC2</mark>, with PySpark on Azure Databricks for the data side. My English is at C1 and my German is at <mark class="m-ink">B1</mark>, moving toward B2. <a class="m-final" href="#contact">I am looking for a working student role in Germany.</a></p>
-</section>
-
-<section class="marks">
-  <figure class="mark-pic">
-    <img src="{{ '/assets/img/trier-porta-nigra-steinmetzzeichen-mac.jpg' | relative_url }}" width="1920" height="1156" alt="Sandstone of the Porta Nigra with a mason's mark cut into it" loading="lazy" decoding="async">
-  </figure>
-  <figure class="mark-pic">
-    <img src="{{ '/assets/img/o-94135-20140612-8-20141228-05.jpg' | relative_url }}" width="1700" height="1080" alt="Letters MAC cut into a stone in the western passage of the Porta Nigra" loading="lazy" decoding="async">
-  </figure>
-  <p class="caption" data-reveal>The letters MAC, cut into the Porta Nigra by a builder nobody remembers. I sign mine in public repositories, so anyone can read the work.</p>
+  <p class="story" data-reveal><strong>Supreet Bhat</strong> here. I study Data Science at <mark class="m-pale">Universität Trier</mark> and build agentic AI the way it will have to be run: tools behind an allowlist, a person approving the risky step, and memory kept apart for each user. Before the master's I finished a BE in Information Science and Engineering in <mark class="m-dark">Bengaluru</mark> with a CGPA of 8.5, and worked as an intern on AI workflows at Magicroll.ai and on web features and SQL at Compsoft Technologies. My work is in Python with LangChain, <mark class="m-pale">LangGraph</mark>, RAG and MCP, shipped through FastAPI, Docker and <mark class="m-dark">AWS EC2</mark>, with PySpark on Azure Databricks for the data side. My English is at C1 and my German is at <mark class="m-pale">B1</mark>, moving toward B2. <a class="m-final" href="#contact">I am looking for a working student role in Germany.</a></p>
 </section>
 
 <section class="contact" id="contact">
-  <a class="crow" href="mailto:{{ site.email }}" data-reveal>{{ site.email }}</a>
-  <a class="crow alt" href="https://github.com/{{ site.github_username }}" data-reveal>github.com/supreetbhat</a>
-  <a class="crow" href="https://www.linkedin.com/in/{{ site.linkedin_username }}/" data-reveal>linkedin.com/in/supreetbhat</a>
-  <a class="crow alt" href="https://huggingface.co/{{ site.huggingface_username }}" data-reveal>huggingface.co/SupreetBhat</a>
-  <p class="crow plain" data-reveal>Trier, Germany</p>
-  <a class="crow hello" href="mailto:{{ site.email }}?subject=Working%20student%20role" data-reveal>Hello <span class="go" aria-hidden="true">&#8594;</span></a>
+  <p class="ask" data-reveal>Write to me about the role.</p>
+  <a class="mail" href="mailto:{{ site.email }}" data-reveal>supreetbhat01<wbr>@gmail.com</a>
+  <div class="corners">
+    <p>Trier, Germany</p>
+    <p class="soc"><a href="https://github.com/{{ site.github_username }}">GitHub</a> <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}/">LinkedIn</a> <a href="https://huggingface.co/{{ site.huggingface_username }}">Hugging Face</a> <a href="{{ '/blog/' | relative_url }}">Build log</a></p>
+  </div>
 </section>
 
 <footer class="foot">
-  <p class="bigname" aria-hidden="true">Supreet Bhat</p>
-  <p class="credits">Pictures from Wikimedia Commons. &ldquo;Porta Nigra morgens (100MP)&rdquo; by Thomas Wolf, CC BY-SA 3.0. &ldquo;Trier Porta Nigra Straßenpflaster&rdquo; and &ldquo;Trier Porta Nigra Steinmetzzeichen MAC&rdquo; by Palauenc05, CC BY-SA 4.0. &ldquo;O-94135-20140612-8 20141228 05&rdquo; by Eifeljanes, CC BY-SA 4.0. <a href="{{ '/feed.xml' | relative_url }}">RSS</a></p>
+  <p>Pictures from Wikimedia Commons. &ldquo;Porta Nigra morgens (100MP)&rdquo; by Thomas Wolf, CC BY-SA 3.0. &ldquo;Trier Porta Nigra Straßenpflaster&rdquo; and &ldquo;Trier Porta Nigra Steinmetzzeichen MAC&rdquo; by Palauenc05, CC BY-SA 4.0. &ldquo;O-94135-20140612-8 20141228 05&rdquo; by Eifeljanes, CC BY-SA 4.0. &ldquo;Trier Amphitheater BW 2013-07-08 13-24-21&rdquo; by Berthold Werner, CC BY-SA 3.0. &ldquo;Trier BW 2022-06-22 07-30-13&rdquo; by Berthold Werner, CC BY-SA 4.0. &ldquo;Trier Kaiserthermen BW 1&rdquo; by Berthold Werner, public domain. The pictures show Trier, where I study, not my projects. <a href="{{ '/feed.xml' | relative_url }}">RSS</a></p>
 </footer>
